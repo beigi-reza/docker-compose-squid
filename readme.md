@@ -48,6 +48,7 @@ You can use the HTTP/HTTPS, ...  proxies on your local devices using **port forw
 
   1. run in terminal `ssh -vNL 3128:0.0.0.0:3128 root@<IP>`
   2.  Set `http/s_proxy` variable
+   
     ```cmd
     export {http,https}_proxy="http://127.0.0.1:3128"
     export {HTTP,HTTPS}_PROXY="http://127.0.0.1:3128"
