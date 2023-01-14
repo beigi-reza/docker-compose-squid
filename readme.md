@@ -39,17 +39,21 @@ You can use the HTTP/HTTPS, ...  proxies on your local devices using **port forw
 
 ### in Windows 
   1. run in cmd `ssh -vNL 3128:0.0.0.0:3128 root@<IP>`
-  1. Go to “Settings” > “Network & internet” > “Proxy.”
-  2. Under “Manual proxy setup,” toggle the “On” button.
-  3. Fill in Server : `127.0.0.1` and port : `3128`
-  4. clik Save
+  2. Go to “Settings” > “Network & internet” > “Proxy.”
+  3. Under “Manual proxy setup,” toggle the “On” button.
+  4. Fill in Server : `127.0.0.1` and port : `3128`
+  5. clik Save
   
 ### in Linux
 
-```cmd
-export {http,https}_proxy="http://127.0.0.1:3128"
-export {HTTP,HTTPS}_PROXY="http://127.0.0.1:3128"
-```
+  1. run in terminal `ssh -vNL 3128:0.0.0.0:3128 root@<IP>`
+  2.  Set `http/s_proxy` variable
+    ```cmd
+    export {http,https}_proxy="http://127.0.0.1:3128"
+    export {HTTP,HTTPS}_PROXY="http://127.0.0.1:3128"
+    ```
+
+
 
 Unset in linux 
 ```cmd
