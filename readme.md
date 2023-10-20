@@ -1,9 +1,6 @@
-# Squid Proxy run as docker (docker-compose)
+# Run Squid Proxy in Docker (docker-compose)
 
-
-
-
-## install Docker & Docker-compose
+## Install Docker & docker-compose
 
 Install Docker
 ```cmd
@@ -11,7 +8,7 @@ curl -sS https://get.docker.com/ | sh
 
 ```
 
-Install Docker-compose
+Install docker-compose
 
 ```cmd
 curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
@@ -23,11 +20,11 @@ docker-compose --version
 
 ## Run Squid Proxy
 
-1. clone this project 
+1. Clone this project 
     ```cmd
     git clone https://github.com/beigi-reza/squid-docker-compse.git
     ```
-2. Run compse File
+2. Run compse file
    ```
    docker-compse -f 
    ```
@@ -37,17 +34,17 @@ docker-compose --version
 
 You can use the HTTP/HTTPS, ...  proxies on your local devices using **port forwarding**. The following SSH command makes the HTTP proxy available to the local device and the private network it uses.
 
-### in Windows 
-  1. run in cmd `ssh -vNL 3128:0.0.0.0:3128 root@<IP>`
-  2. Go to “Settings” > “Network & internet” > “Proxy.”
-  3. Under “Manual proxy setup,” toggle the “On” button.
-  4. Fill in Server : `127.0.0.1` and port : `3128`
-  5. clik Save
+### On Windows 
+  1. Run in cmd `ssh -vNL 3128:0.0.0.0:3128 root@<IP>`
+  2. Go to "Settings" > "Network & internet" > "Proxy."
+  3. Under "Manual proxy setup" toggle the "On" button.
+  4. Fill in Server: `127.0.0.1` and port: `3128`
+  5. Click Save
   
-### in Linux
+### On Linux
 
-  1. run in terminal `ssh -vNL 3128:0.0.0.0:3128 root@<IP>`
-  2.  Set `http/s_proxy` variable
+  1. Run in terminal `ssh -vNL 3128:0.0.0.0:3128 root@<IP>`
+  2. Set `http/s_proxy` variable
    
     ```cmd
     export {http,https}_proxy="http://127.0.0.1:3128"
@@ -56,7 +53,7 @@ You can use the HTTP/HTTPS, ...  proxies on your local devices using **port forw
 
 
 
-Unset in linux 
+Unset on Linux 
 ```cmd
 unset {http,https}_proxy
 unset {HTTP,HTTPS}_PROXY
