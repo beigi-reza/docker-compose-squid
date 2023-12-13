@@ -27,9 +27,13 @@ docker-compose --version
     ```cmd
     git clone https://github.com/beigi-reza/squid-docker-compse.git
     ```
-2. Run compse File
+2. Change directory to the cloned project
+   ```cmd
+    cd squid-docker-compse
+    ```
+2. Run docker-compose File
    ```
-   docker-compse -f 
+   docker-compose up
    ```
 
 
