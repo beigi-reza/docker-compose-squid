@@ -45,13 +45,12 @@ You can use the `HTTP` proxies on your local devices.
   
 ### in Linux
 
-  1. run in terminal `ssh -vNL 3128:localhost:3128 root@<Server_IP>`
-  2. Set `http_proxy` variable
+Set `http_proxy` variable
    
-    ```cmd
-    export {http,https}_proxy="http://<IP>:3128"
-    export {HTTP,HTTPS}_PROXY="http://<IP>:3128"
-    ```
+```cmd
+export {http,https}_proxy="http://<IP>:3128"
+export {HTTP,HTTPS}_PROXY="http://<IP>:3128"
+```
 
 
 
